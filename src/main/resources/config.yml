@@ -1,0 +1,6 @@
+# Select your language:
+lang: "en"
+
+# Put your server information:
+namemc-link: "https://namemc.com/server/example.com" # Just replace the example IP with your server IP
+server-ip: "example.com" # The same as above here

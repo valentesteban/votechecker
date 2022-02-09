@@ -1,0 +1,19 @@
+################
+# Placeholders #
+################
+
+# - $link (Server Link)
+# - $player (Player Name)
+# - $heart (Heart Symbol)
+
+messages:
+  player-no-vote:
+    - ""
+    - "&cLooks like you haven't voted for &e&lExample Network!"
+    - "&aVote here to support the network:"
+    - "&b$link"
+    - ""
+
+  player-vote:
+    - "&aThanks for voting for us in &eNameMC&a, $player."
+    - "&bWe really appreciate your support to the network! &c$heart"

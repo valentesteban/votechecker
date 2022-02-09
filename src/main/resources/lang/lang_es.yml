@@ -1,0 +1,19 @@
+################
+# Placeholders #
+################
+
+# - $link (Link del servidor)
+# - $jugador (Nombre del jugador)
+# - $corazon (Simbolo de corazón)
+
+mensajes:
+  jugador-no-ha-votado:
+    - ""
+    - "&c¡Parece que no has votado por &e&lExample Network!"
+    - "&aVota aqui para ayudar a la network:"
+    - "&b$link"
+    - ""
+
+  jugador-ha-votado:
+    - "&aGracias por votar por nosotros en &eNameMC&a, $jugador."
+    - "&b¡Realmente agradecemos la ayuda a la network! &c$corazon"
