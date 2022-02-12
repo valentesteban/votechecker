@@ -39,15 +39,14 @@ public class PlayerJoinListener
                     switch (response) {
                         case "false":
                             if (config.getString("lang").equals("en")) {
-                                // TODO: I know this is ugly and i'm going to change it - 11/2/2022
-                                for (String noVoteMessage : lang_en.getStringList("messages.player-no-vote")) {
-                                    player.sendMessage(translate(noVoteMessage)
+                                for (String no_vote_message : lang_en.getStringList("messages.player-no-vote")) {
+                                    player.sendMessage(translate(no_vote_message)
                                             .replace("$player", player.getName())
                                             .replace("$link", link));
                                 }
                             } else {
-                                for (String noVoteMessage : lang_es.getStringList("mensajes.jugador-no-ha-votado")) {
-                                    player.sendMessage(translate(noVoteMessage)
+                                for (String no_vote_message : lang_es.getStringList("mensajes.jugador-no-ha-votado")) {
+                                    player.sendMessage(translate(no_vote_message)
                                             .replace("$jugador", player.getName())
                                             .replace("$link", link));
                                 }
@@ -56,14 +55,14 @@ public class PlayerJoinListener
                             break;
                         case "true":
                             if (config.getString("lang").equals("en")) {
-                                for (String voteMessage : lang_en.getStringList("messages.player-vote")) {
-                                    player.sendMessage(translate(voteMessage)
+                                for (String vote_message : lang_en.getStringList("messages.player-vote")) {
+                                    player.sendMessage(translate(vote_message)
                                             .replace("$player", player.getName())
                                             .replace("$heart", "❤"));
                                 }
                             } else {
-                                for (String voteMessage : lang_es.getStringList("mensajes.jugador-ha-votado")) {
-                                    player.sendMessage(translate(voteMessage)
+                                for (String vote_message : lang_es.getStringList("mensajes.jugador-ha-votado")) {
+                                    player.sendMessage(translate(vote_message)
                                             .replace("$jugador", player.getName())
                                             .replace("$corazon", "❤"));
                                 }
