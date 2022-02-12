@@ -37,8 +37,8 @@ public class PlayerJoinListener
         WebsiteResponse.getResponse(voteChecker, "https://api.namemc.com/server/" + ip + "/votes?profile=" + player.getUniqueId(),
                 response -> {
                     switch (response) {
-                        // yes, I can do this with bytes and in another class
-                        // and then use an invoker here, but... i'm lazy :/
+                        // yes, I can do this with bytes in another class
+                        // and then use that class here, but... i'm lazy :/
                         case "false":
                             if (config.getString("lang").equals("en")) {
                                 for (String noVoteMessage : lang_en.getStringList("messages.player-no-vote")) {
