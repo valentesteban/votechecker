@@ -11,7 +11,6 @@ public class WebsiteResponse {
                                    String url,
                                    WebsiteCallback callback
     ) {
-
         plugin.getServer().getScheduler().runTaskAsynchronously(plugin, () -> {
             try (BufferedReader reader =
                          new BufferedReader(
