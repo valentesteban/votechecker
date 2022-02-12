@@ -20,7 +20,6 @@ public class VoteCheckerModule
     @Override
     protected void configure() {
         YamlFile config = new YamlFile(voteChecker, "config");
-
         bind(YamlFile.class)
                 .toInstance(config);
         bind(YamlFile.class)
