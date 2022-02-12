@@ -21,7 +21,6 @@ public final class VoteChecker
 
     @Override
     public void onEnable() {
-
         for (Service service : services) {
             service.start();
         }
